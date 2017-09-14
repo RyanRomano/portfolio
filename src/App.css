@@ -1,21 +1,68 @@
-.App {
-  text-align: center;
-}
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+  height: 50px;
+  margin-top: 17px;
+  vertical-align: middle;
+  text-align: center;
+  flex-basis: 5%;
+  color: black;
+  /*background-color: green;*/
+}
+
+.App-logo:hover {
+  animation: App-logo-spin .5s linear;
+  color: tomato;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
   padding: 20px;
   color: white;
+  display: flex;
+}
+
+.App-header ul {
+  flex-grow: 1;
+  text-align: right;
+  /*background: pink;*/
+}
+
+.App-header li {
+  display: inline;
+  font-size: 30px;
+  margin-left: 1em;
+  color: black;
+}
+
+.App-header a {
+  color: black;
+}
+
+.App-header a:hover {
+  color: tomato;
+}
+
+
+.App-hero {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1em;
+  margin-bottom: 3em;
+}
+
+.App-hero img {
+  width: 100%;
+  height: auto;
 }
 
 .App-intro {
-  font-size: large;
+  width: 80%;
+  margin: 0 auto 1em auto;
+
+
 }
 
 @keyframes App-logo-spin {
