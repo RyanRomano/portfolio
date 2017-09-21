@@ -9,5 +9,6 @@ injectGlobal`
 		font-size: 24px;
 		margin: 0;
   		padding: 0;
+  		background-color: pink;
 	}
 `

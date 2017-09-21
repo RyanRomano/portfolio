@@ -1,7 +1,9 @@
 import React from 'react'; 
-import { IndexRoute, Router, Route, hashHistory } from 'react-router';
-import Home from './containers/Home';
-import App from './containers/App';
+import { IndexRoute, Router, Route, browserHistory } from 'react-router';
+import Home from 'containers/Home/Home';
+import App from 'containers/App/App';
+import Projects from 'containers/Projects/Projects'
+import About from 'containers/About/About'
 
 Router.prototype.componentWillReceiveProps = function(nextProps) {
   let components = [];
@@ -19,10 +21,12 @@ Router.prototype.componentWillReceiveProps = function(nextProps) {
 };
 
 export default (
-	<Router history={hashHistory}>
+	<Router history={browserHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home}/>
-		</Route>
+      <Route path="/projects" component={Projects}/>
+      <Route path="/about" component={About}/>
+    </Route>
 	</Router>
 );
 	
