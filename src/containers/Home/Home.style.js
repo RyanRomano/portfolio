@@ -6,44 +6,10 @@ export const Image = styled.img`
   margin: 0 auto;
 `;
 
-export const Navbar = styled.div`
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-
-  h1 {
-
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-
-  li {
-    display: inline;
-    margin-left: .5em;
-    font-size: 1.5em;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  a:hover {
-    color: white;
-  }
-`
-
 export const Hero = styled.div`
   height: 50vh;
   background-image: url('${require('../../assets/header.png')}');
-
+  margin-bottom: 300px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -51,7 +17,7 @@ export const Hero = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   h1 {
   	color: white;
   	text-align: center;
@@ -61,6 +27,7 @@ export const Hero = styled.div`
 
 export const RevealP = styled.p`
   position: relative;
+  margin-bottom: 50px;
   &:after {
     content: ' ';
     position: absolute;
@@ -72,6 +39,9 @@ export const RevealP = styled.p`
     transform-origin: left;
     transform: rotateY(90deg);
     transition: transform 1s;
+  }
+  &:hover {
+    color: white;
   }
   ${({ hide }) => hide && css`
     &:after {

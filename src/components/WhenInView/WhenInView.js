@@ -5,7 +5,7 @@ class WhenInView extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isInView: true
+      isInView: false
     };
 
     this.onEnter = this.onEnter.bind(this);
