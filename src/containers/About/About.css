@@ -1,0 +1,40 @@
+.aboutContainer img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-right: 1em;
+}
+
+.aboutContent{
+  padding-bottom: 1em;
+}
+
+.aboutContent h2 {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .aboutContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .aboutContainer img {
+    justify-content: center;
+    flex-basis: 100%;
+    margin-right: 5%;
+    width: 40%;
+    height: 50%;
+  }
+
+  .aboutContent{
+    width: 45%; 
+  } 
+
+  .aboutContent p {
+    padding-top: 0;
+    padding-bottom: 1em;
+    margin: 0;
+  }
+}

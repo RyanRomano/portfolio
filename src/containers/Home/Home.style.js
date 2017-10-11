@@ -1,18 +1,11 @@
-import styled, { css } from 'styled-components'
-
-export const Image = styled.img`
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-`;
+import styled, { css } from 'styled-components';
 
 export const Hero = styled.div`
   height: 50vh;
   background-image: url('${require('../../assets/header.png')}');
-  margin-bottom: 300px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center right;
 
   display: flex;
   flex-direction: column;
@@ -41,7 +34,7 @@ export const RevealP = styled.p`
     transition: transform 1s;
   }
   &:hover {
-    color: white;
+    color: pink;
   }
   ${({ hide }) => hide && css`
     &:after {
